@@ -1,0 +1,246 @@
+body {
+    background-image: url(./img/maxresdefault.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; /*заставляет менять масштаб при изменении размера браузера*/
+  }
+
+  /* @import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed'); */
+
+
+.menu{
+    opacity: 80%;
+}
+
+
+.menu-main {
+  list-style: none;
+  margin: 40px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: rgb(255, 255, 255);  /*95, 228, 233*/
+  font-weight: 800;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #000000;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  /* font-family: 'Ubuntu Condensed', sans-serif; */
+  font-family: Andale Mono, monospace;
+  letter-spacing: 2px;  /*межбуквенное расстояние*/
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;         /*размер шрифта*/
+  text-transform: uppercase;  /*заглавные буквы*/
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #000000;}  /*при посещении цвет ссылки*/
+.menu-main a.current, .menu-main a:hover{color: #000000;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #04556c;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu-main {padding-top: 0;}
+.menu-main li {display: block;}
+.menu-main li:after {content: none;}
+.menu-main a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+}
+}
+
+h1{
+    text-align: left;
+    color: white;
+    font-size: 100px;
+    font-family: Andale Mono, monospace;
+    margin-left: 150px;
+    
+}
+
+/*проставить позицию относит дрг друга(флексы)*/
+.text, p{
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    font-family: Andale Mono, monospace;
+    margin-left: 150px;
+    margin-right: 200px;
+    margin-top: 200px;
+}
+/*стили пишущей машинки*/
+
+/* pre{
+    text-align: left;
+    color: white;
+    font-size: 25px;
+    font-family: Andale Mono, monospace;
+    margin-left: 150px;
+    margin-right: 150px;
+} */
+
+
+/*слайдер*/
+/* 
+body .html{
+	outline: none;
+	user-select: none;
+	font-size: 16px;
+}
+
+a{
+	text-decoration: none;
+	background-color: rgb(50,50,50);
+	color: white;
+	padding: 5px 20px;
+} */
+
+/* a:hover{
+	background-color: rgb(70,70,70);
+} */
+
+.slider{
+	background-color: rgba(230, 230, 230, 0);
+	height: 350px;
+	padding: 50px;
+
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+    margin-top: 50px;
+}
+
+
+.slider #slider_image{
+	background-color: rgb(61, 130, 142);
+  height: 400px;
+	min-width: 400px;
+}
+
+.slider button{
+	width: 52px;
+	height: 52px;
+	margin: 30px;
+	border: none;
+	border-radius: 100%;
+	padding: 0;
+	background: none;
+    background-color: #04556c;
+    
+}
+
+.slider button img, .contact_icon{
+	width: 50px;
+	height: 50px;
+    
+}
+
+.slider #left img{
+	transform: rotate(180deg);
+    
+}
+
+.slider button:hover{
+	opacity: 80%;
+	cursor: pointer;
+}
+
+p{
+    justify-content: center;
+    background-color: white;
+}
+
+/*html*/
+
+#html_h1{
+    text-align: left;
+    color: white;
+    font-size: 80px;
+    font-family: Andale Mono, monospace;
+    margin-left: 150px;
+
+}
+
+#html_text{
+    margin-top: 0;
+}
+
+#resurs_icon{
+    background: none;
+}
+
+.resurs{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    color: rgb(255, 255, 255);
+    margin-left: 150px;
+    font-size: 15px;
+    font-family: Andale Mono, monospace;
+}
+
+
+.img_icon_html{
+    width: 50px;
+}
+
+#text_contact{
+    margin-top: 100px;
+}
+
+#contact_icon{
+ position: fixed;
+ right: 15px; 
+ top: 350px;
+
+}
+#contact_icon2{
+    position: fixed;
+    right: 15px; 
+    top: 250px;
+
+}
+#contact_icon3{
+    position: fixed;
+    right: 15px; 
+    top: 450px;
+}
+
+#knopka{
+    text-decoration: none;
+}
+
+a:link {
+    color: #ffffff; /* Цвет ссылок */
+   }
+   a:visited {
+    color: #ffffff; /* Цвет посещенных ссылок */
+   }
+   a:active {
+    color: rgb(255, 255, 255); /* Цвет активной ссылки */
+   }
+   #div_knopka{
+margin-left: 640px;
+margin-bottom: 15px;
+   }
